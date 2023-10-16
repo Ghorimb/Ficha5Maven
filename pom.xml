@@ -5,21 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>FT5Maven</artifactId>
+    <artifactId>FichaTrabalho5_44098</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-math3</artifactId>
-            <version>3.6.1</version>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -28,13 +21,12 @@
                 <version>3.3.0</version>
                 <configuration>
                     <descriptorRefs>
-                        <descriptorRef>jar-withdependencies</descriptorRef>
+                        <descriptorRef>jar-withdependencies</descriptorRef>
                     </descriptorRefs>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <mainClass>org.example.Main</mainClass>
-                            <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                 </configuration>
@@ -50,4 +42,11 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+    </dependencies>
 </project>
